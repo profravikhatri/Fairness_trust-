@@ -1,0 +1,12 @@
+
+version: '3'
+services:
+ fabric-peer:
+  image: hyperledger/fabric-peer
+  ports: ["7051:7051"]
+ fabric-orderer:
+  image: hyperledger/fabric-orderer
+  ports: ["7050:7050"]
+ ethereum:
+  image: trufflesuite/ganache-cli
+  ports: ["8545:8545"]
